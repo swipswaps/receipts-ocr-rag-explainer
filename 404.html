@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    (function () {
+      var segs = location.pathname.split('/').filter(Boolean);
+      location.replace(segs.length > 0 ? '/' + segs[0] + '/' : '/');
+    })();
+  </script>
+</head>
+<body></body>
+</html>
